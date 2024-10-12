@@ -5,6 +5,8 @@ It consists of two components:
 - **Interface**: Contains frontend code.
 - **Backend**: Contains backend code.
 
+![image info](framework.png)
+
 ## Interface Setup
 
 This framework is based on Node.js and npm.
