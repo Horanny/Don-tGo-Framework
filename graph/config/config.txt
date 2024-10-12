@@ -1,3 +1,0 @@
-delta_time: 6
-k: 8
-delta_minute: 10
