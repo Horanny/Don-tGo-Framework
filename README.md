@@ -1,7 +1,11 @@
-hiahiahia
 This repository contains the framework for ***Deciphering Explicit and Implicit Features for Reliable, Interpretable, and Actionable User Churn Prediction in Online Video Games.***
 
-### Setup
+It consists of two components:
+
+- **Interface**: Contains frontend code.
+- **Backend**: Contains backend code.
+
+## Interface Setup
 
 This framework is based on Node.js and npm.
 
@@ -24,6 +28,37 @@ Once the environment is set up, install the required node modules by running:
 npm install
 ```
 
+### Backend IP Configuration
+
+In `interface/config/index.js`, replace `YOUR_BACKEND_IP` with the actual backend IP:
+
+```jsx
+dev: {
+    env: require("./dev.env"),
+    port: 8050,
+    assetsSubDirectory: "static",
+    assetsPublicPath: "/",
+    proxyTable: {
+      '/cf': {
+        target: `http://YOUR_BACKEND_IP:${proxyPort}`,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/cf': '/cf'
+        }
+      },
+    },
+    cssSourceMap: false
+  }
+```
+
 ### Launch the Interface
 
 To launch the **Don’tGo** interface, run the following command:
+
+```jsx
+npm run start
+```
+
+## Backend Setup
+
+To run the backend, execute:

@@ -29,11 +29,11 @@ module.exports = {
     assetsSubDirectory: "static",
     assetsPublicPath: "/",
     proxyTable: {
-      '/cf': {//入参
-        target: `http://10.19.133.66:${proxyPort}`,
+      '/cf': {
+        target: `http://YOUR_BACKEND_IP:${proxyPort}`,
         changeOrigin: true,
         pathRewrite: {
-          '^/cf': '/cf'//入参代理的Url
+          '^/cf': '/cf'
         }
       },
     },
