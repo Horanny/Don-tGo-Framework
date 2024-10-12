@@ -62,3 +62,7 @@ npm run start
 ## Backend Setup
 
 To run the backend, execute:
+
+```jsx
+python app.py
+```
