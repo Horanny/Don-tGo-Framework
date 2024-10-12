@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import routes from './routers';
+import routes from './routers.js';
 import * as d3 from "d3";
 import 'assets/css/main.less';
 import ElementUI from 'element-ui';
