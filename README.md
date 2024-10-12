@@ -5,7 +5,7 @@ This repository contains the framework for ***Deciphering Explicit and Implicit 
 It consists of two components:
 
 - **Interface**: Contains frontend code.
-- **Backend**: Contains backend code.
+- **Backend**: Contains backend code. The counterfactual generation in the backend is inspired by and builds upon the DECE framework: https://github.com/ChengFR/DECE-research.
 
 ## Interface Setup
 
