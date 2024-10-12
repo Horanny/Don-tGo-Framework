@@ -1,11 +1,11 @@
 This repository contains the framework for ***Deciphering Explicit and Implicit Features for Reliable, Interpretable, and Actionable User Churn Prediction in Online Video Games.***
 
+![image info](framework.png)
+
 It consists of two components:
 
 - **Interface**: Contains frontend code.
 - **Backend**: Contains backend code.
-
-![image info](framework.png)
 
 ## Interface Setup
 
