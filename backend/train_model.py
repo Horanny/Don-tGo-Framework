@@ -34,7 +34,7 @@ step_setting = {}
 from pymongo import MongoClient
 client = MongoClient(host='127.0.0.1', port=27017)  # , socketTimeoutMS=60000, serverSelectionTimeoutMS=60000)
 print(client.server_info())
-global_coll = client['CHI2023']
+global_coll = client['YOUR_MONGODB_DATA']
 print(list(global_coll.list_collections()))
 
 
