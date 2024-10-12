@@ -1,0 +1,260 @@
+.corner-info {
+    position: absolute;
+    background-color: rgba(240, 240, 240, 0.5);
+    border-color: rgba(160, 160, 160, 0.5);
+    padding: 4px 6px;
+    bottom: -32px;
+    right: 0px;
+    font-size: 13px;
+}
+
+.compact-table .cell.col-index .cell-content {
+    background-color: rgba(240, 240, 240, 0.5);
+}
+
+.toolbox {
+    text-align: left;
+    height: 30px;
+}
+
+.compact-table {
+    height: calc(100% - 30px);
+}
+
+.header-chart {
+    .info {
+        line-height: 18px;
+        height: 18px;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 6px;
+    }
+    div.header-chart {
+        margin-top: 5px;
+    }
+}
+
+.subset-chart {
+    .zoom-button {
+        position: absolute;
+        right: 0px;
+        top: 2px;
+    }
+    .line {
+        fill: none;
+        stroke: rgb(194, 40, 40);
+        stroke-width: 2px;
+    }
+    .left-handle-base,
+    .right-handle-base {
+        pointer-events: none;
+    }
+    .handle-line {
+        stroke: #aaa;
+        stroke-width: 2px;
+        pointer-events: none;
+    }
+    .handle-text {
+        font-size: 10px;
+        pointer-events: none;
+    }
+    .handle-icon {
+        fill: #aaa;
+        pointer-events: none;
+    }
+    path.link {
+        // stroke: black;
+        fill: none;
+    }
+    circle.hint-outer {
+        fill: none;
+        stroke: red;
+        opacity: 0.8;
+        stroke-width: 1px;
+    }
+    circle.hint-inner {
+        fill: red;
+        opacity: 0.8;
+    }
+    div.selected-column {
+        // border-color: red;
+        // border-style: solid;
+        box-shadow: inset 0px 0px 1px 1px #f00;
+    }
+    .histogram {
+        svg {
+            margin-bottom: 0;
+            cursor: crosshair;
+            vertical-align: top;
+            rect {
+                /* fill: rgb(109, 160, 202); */
+                opacity: 0.7;
+            }
+            .base rect {
+                /* fill: rgb(109, 160, 202); */
+                fill: #aaa;
+                opacity: 0.5;
+            }
+            rect.shade {
+                fill: #aaa;
+                opacity: 0;
+                &:hover {
+                    opacity: 0.4;
+                }
+            }
+            rect.shade.show {
+                opacity: 0.4;
+            }
+            rect.selector-sheet {
+                // fill: black;
+                opacity: 0;
+            }
+            rect.selector {
+                fill: black;
+                opacity: 0.2;
+                pointer-events: none;
+            }
+            .stop-left {
+                stop-color: #3f51b5;
+                /* Indigo */
+            }
+            .stop-right {
+                stop-color: #009688;
+                /* Teal */
+            }
+            rect.color-band {
+                height: 5px;
+                // fill: url(#gini-gradient);
+            }
+            transition: transform 2s;
+        }
+        .info {
+            line-height: 18px;
+            height: 18px;
+            font-size: 12px;
+            text-align: left;
+            margin-left: 6px;
+        }
+    }
+    .bar-chart {
+        svg {
+            margin-bottom: 0;
+            cursor: crosshair;
+            vertical-align: top;
+            rect {
+                /* fill: rgb(109, 160, 202); */
+                opacity: 0.7;
+            }
+            .base rect {
+                /* fill: rgb(109, 160, 202); */
+                fill: #ccc;
+                opacity: 0.5;
+            }
+            rect.shade {
+                fill: #eee;
+                opacity: 0;
+                &:hover {
+                    opacity: 0.4;
+                }
+            }
+            rect.shade.show {
+                opacity: 0.2;
+            }
+            rect.selector-sheet {
+                // fill: black;
+                opacity: 0;
+            }
+            rect.selector {
+                fill: black;
+                opacity: 0.2;
+                pointer-events: none;
+            }
+            .stop-left {
+                stop-color: #3f51b5;
+                /* Indigo */
+            }
+            .stop-right {
+                stop-color: #009688;
+                /* Teal */
+            }
+            rect.color-band {
+                height: 5px;
+                // fill: url(#gini-gradient);
+            }
+        }
+        .info {
+            line-height: 18px;
+            height: 18px;
+            font-size: 12px;
+            text-align: left;
+            margin-left: 6px;
+        }
+    }
+}
+
+.label-chart {
+    rect.false {
+        opacity: 0.7;
+        mask: url(#mask-stripe)
+    }
+    .pos {
+        opacity: 0.7;
+        fill: rgb(78, 121, 167);
+    }
+    .neg {
+        opacity: 0.7;
+        fill: rgb(242, 142, 44);
+    }
+    rect.base-bar {
+        fill-opacity: 0;
+    }
+    rect.base-bar:not(.selected) {
+        // stroke: #aaa;
+        stroke-width: 0;
+    }
+    rect.selected {
+        stroke-width: 2px;
+        // stroke: rgb(180, 91, 2);
+    }
+    text.bar-text {}
+}
+
+div.legend {
+    div.legend-container {
+        float: right;
+        margin-right: 10px;
+    }
+    div.legend-color-div {
+        width: 10px;
+        height: 20px;
+        float: left;
+        margin-left: 5px;
+        margin-right: 2px;
+        border-radius: 5px;
+    }
+    height: 30px;
+    margin-left: 30px;
+    span.legend-class {
+        font-weight: bolder;
+    }
+}
+
+div.cell-content {
+    font-weight: bold;
+    // float: left;
+    overflow: hidden;
+    // margin-left: 20px;
+    border-top: 1px;
+}
+
+div.cell-content-container {
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+
+.cell-triangle {
+    margin-left: 3px;
+    padding-top: 1px;
+    opacity: 0.8;
+}

@@ -1,0 +1,31 @@
+{
+  "apps":[
+      {
+          "name": "FMLens", 
+          "script": "app.js",
+          "env": {
+              "COMMON_varIABLE": "true"
+          },
+          "env_production": {
+              "NODE_ENV": "production"
+          }
+      }
+  ],
+  "deploy": {
+      "production": {
+          "key": "C:\/Users\/dell\/.ssh\/s1.pem",
+          "user":"root",
+          "host": ["47.103.198.236"],
+          "port": "10022",
+          "ref": "origin/master",
+          "repo": "git@github.com:Catorg241/FMLens.git",
+          "path": "/root/project/d3/FMLens",
+          "ssh_options": "StrictHostKeyChecking=no",
+          "env": {
+              "NODE_ENV": "production"
+          },
+          "pre-deploy-local": "echo '生产环境部署中'",
+          "post-deploy":"pm2 startOrRestart ecosystem.json --env production"
+      }
+  }
+}

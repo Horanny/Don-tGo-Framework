@@ -1,0 +1,86 @@
+.form-item-font {
+    font: 10px sans-serif;
+    font-weight: bold;
+}
+
+div.instance-body-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+div.instance-vis-container {
+    position: relative;
+    height: calc(100% - 180px);
+    overflow: scroll;
+}
+
+div.axis-container,
+div.pcp-svg-container {
+    position: absolute;
+}
+
+div.pcp-svg-container {
+    top: 10;
+}
+
+div.feature-title {
+    height: 30px;
+    width: 100%;
+    align-content: left;
+    align-items: left;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+}
+
+div.feature-container {
+    height: 100px;
+}
+
+span.target-title {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-right: 0px;
+    float: left;
+}
+
+span.setting-title {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-right: 0px;
+    float: left;
+}
+
+[data-theme='compact'] .site-collapse-custom-collapse .site-collapse-custom-panel,
+.site-collapse-custom-collapse .site-collapse-custom-panel {
+    background: #f7f7f7;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    border: 0px;
+    overflow: hidden;
+}
+
+div.label-div {
+    background-color: #aaa;
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+div.ant-slider {
+    margin-top: 10px;
+}
+
+div.ant-divider {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+span.label-text {
+    color: white;
+    font-weight: bold;
+}
